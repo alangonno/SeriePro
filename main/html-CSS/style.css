@@ -53,7 +53,6 @@ nav ul li{
 .btn-login:hover {
   background: #555555;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -85,7 +84,6 @@ p#text-secundario {
 .btn-cadastro:hover {
   background: #00db00;
   font-weight: bold;
-  text-decoration: underline;
 }
 
 /* Funcionalidades */
