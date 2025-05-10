@@ -13,6 +13,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 ul {
   list-style: none;
 }
@@ -35,7 +41,7 @@ nav ul li{
   display: block;
   list-style-type: none;
   display: inline-block;
-  padding-left: 6%;
+  padding-left: 3.2%;
   
 }
 .btn-login {
@@ -43,6 +49,10 @@ nav ul li{
   color: #fff;
   padding: 6px 16px;
   border-radius: 5px;
+}
+
+.btn-login:hover {
+  background: #4d4d4d;
 }
 
 /* Hero Section */
@@ -69,6 +79,11 @@ p#text-secundario {
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
+}
+
+.btn-cadastro:hover {
+  background: #01ff01;
+
 }
 
 /* Funcionalidades */
@@ -146,6 +161,11 @@ button {
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+}
+
+button:hover {
+  background: #00ff00;
+  text-decoration: underline;
 }
 
 /* Footer */
