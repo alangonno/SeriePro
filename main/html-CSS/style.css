@@ -40,7 +40,7 @@ nav ul li{
   display: block;
   list-style-type: none;
   display: inline-block;
-  padding-left: 3.2%;
+  padding-left: 1.8%;
   
 }
 .btn-login {
@@ -51,7 +51,9 @@ nav ul li{
 }
 
 .btn-login:hover {
-  background: #4d4d4d;
+  background: #555555;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -81,8 +83,9 @@ p#text-secundario {
 }
 
 .btn-cadastro:hover {
-  background: #01ff01;
-
+  background: #00db00;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* Funcionalidades */
@@ -164,6 +167,7 @@ button {
 
 button:hover {
   background: #00ff00;
+  font-weight: bold;
   
 }
 
