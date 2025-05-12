@@ -35,7 +35,6 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-left: 1rem;
 }
 
 .logo-serie {
@@ -276,6 +275,10 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+
+  .logo {
+    margin-left: 1rem;
+  }
   .main-nav {
     display: none;
   }
