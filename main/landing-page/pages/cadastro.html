@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - SeriePro</title>
+  <link rel="stylesheet" href="../estilos/styles.css">
+  <link rel="stylesheet" href="../estilos/forms.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-serie">Serie</span><span class="logo-pro">Pro</span>
+      </div>
+      <nav aria-label="Navegação principal">
+        <ul class="main-nav">
+          <li><a href="../pages/index.html">Início</a></li>
+          <li><a href="../pages/funcionalidades.html">Funcionalidades</a></li>
+          <li><a href="../pages/cadastro.html" class="active" aria-current="page">Cadastro</a></li>
+          <li><a href="../pages/login.html" class="btn btn-primary">Login</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-icon"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav aria-label="Navegação mobile">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="funcionalidades.html">Funcionalidades</a></li>
+          <li><a href="cadastro.html" class="active">Cadastro</a></li>
+          <li><a href="login.html" class="btn btn-primary">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container form-container">
+      <h1 class="page-title">Cadastre-se</h1>
+
+      <form class="form-card">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome completo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Sua senha" required>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Tipo de usuário</legend>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="professor" name="userType" value="professor">
+              <label for="professor">Professor</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="aluno" name="userType" value="aluno">
+              <label for="aluno">Aluno</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          Enviar
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-right">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </form>
+
+      <div class="form-footer">
+        <p>Já tem uma conta? <a href="login.html" class="text-link">Faça login</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 SeriePro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      menuButton.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        mobileMenu.classList.toggle('open');
+        this.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

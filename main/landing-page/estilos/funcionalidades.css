@@ -1,0 +1,91 @@
+/* Estilos específicos para a página de funcionalidades */
+
+.page-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin: 3rem 0;
+  color: #ffffff;
+}
+
+.feature-section {
+  margin-bottom: 4rem;
+}
+
+.feature-section h2 {
+  text-align: center;
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: #9ca3af;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  border: 1px solid #2d2d2d;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  transition: border-color 0.3s;
+}
+
+.feature-item:hover {
+  border-color: #3b82f6; /* blue-500 */
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(59, 130, 246, 0.2); /* blue-500 with opacity */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.feature-content h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.feature-content p {
+  color: #9ca3af;
+}
+
+.cta-button {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-item {
+    flex-direction: column;
+  }
+  
+  .feature-icon {
+    margin: 0 auto 1rem;
+  }
+  
+  .feature-content {
+    text-align: center;
+  }
+}

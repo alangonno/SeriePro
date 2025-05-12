@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeriePro - Conectando professores e alunos</title>
+  <link rel="stylesheet" href="../estilos/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-serie">Serie</span><span class="logo-pro">Pro</span>
+      </div>
+      <nav aria-label="Navegação principal">
+        <ul class="main-nav">
+          <li><a href="../pages/index.html" class="active" aria-current="page">Início</a></li>
+          <li><a href="../pages/funcionalidades.html">Funcionalidades</a></li>
+          <li><a href="../pages/cadastro.html">Cadastro</a></li>
+          <li><a href="../pages/login.html" class="btn btn-primary">Login</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-icon"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav aria-label="Navegação mobile">
+        <ul>
+          <li><a href="index.html" class="active">Início</a></li>
+          <li><a href="funcionalidades.html">Funcionalidades</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="login.html" class="btn btn-primary">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h1>Seu treino na palma da mão.</h1>
+        <h2>SériePro conecta professores e alunos com <span class="highlight">organização</span> e <span class="highlight">resultado</span>.</h2>
+      </section>
+
+      <section class="features">
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3>Treinos personalizados</h3>
+            <p>Planos de treino adaptados às suas necessidades e objetivos</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Agenda com professor</h3>
+            <p>Marque e gerencie suas aulas de forma simples e rápida</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-circle" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+              </svg>
+            </div>
+            <h3>Exercícios com exemplos</h3>
+            <p>Biblioteca completa com demonstrações e instruções</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p>Tudo em um só lugar para otimizar seu tempo e maximizar seus resultados.</p>
+        <a href="cadastro.html" class="btn btn-primary">
+          Cadastro
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-right">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 SeriePro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      menuButton.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        mobileMenu.classList.toggle('open');
+        this.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>
