@@ -41,10 +41,6 @@ header {
   color: #3b82f6; /* blue-500 */
 }
 
-.logo-pro {
-  color: #e5e7eb;
-}
-
 /* Navegação principal */
 .main-nav {
   display: flex;
