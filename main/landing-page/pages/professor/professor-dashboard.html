@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard do Professor - SeriePro</title>
+  <link rel="stylesheet" href="../../estilos/styles.css">
+  <link rel="stylesheet" href="../../estilos/dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-serie">Serie</span><span class="logo-pro">Pro</span>
+      </div>
+      <nav aria-label="Navegação principal">
+        <ul class="main-nav">
+          <li><a href="#" class="active" aria-current="page">Dashboard</a></li>
+          <li><a href="../inicio/index.html" class="btn btn-primary">Sair</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-icon"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <nav aria-label="Navegação mobile">
+        <ul> 
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a href="../inicio/index.html" class="btn btn-primary">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="dashboard-container">
+    <div class="container">
+      <div class="dashboard-grid">
+        <!-- Seção de Controle de Alunos -->
+        <section class="students-section">
+          <h2>Controle de Alunos</h2>
+          
+          <div class="students-list">
+            <div class="student-header">
+              <h3>Alunos</h3>
+            </div>
+            
+             <!-- Transformar em TABELA -->
+            <div class="student-item">
+              <span class="student-name">Alan Gonçalves</span>
+              <a href="#" class="btn btn-small">Acessar</a>
+            </div>
+            
+            <div class="student-item">
+              <span class="student-name">Gisele Gonçalves</span>
+              <a href="#" class="btn btn-small">Acessar</a>
+            </div>
+            
+            <div class="student-item">
+              <span class="student-name">Heitor Neivas</span>
+              <a href="#" class="btn btn-small">Acessar</a>
+            </div>
+            
+            <div class="student-item">
+              <span class="student-name">Leticia Maximiliano</span>
+              <a href="#" class="btn btn-small">Acessar</a>
+            </div>
+          </div>
+
+          <!-- Transformar em TABELA -->
+
+          <div class="students-actions">
+            <button class="btn btn-primary">
+              Adicionar Novo Aluno
+            </button>
+            
+            <div class="pagination">
+              <button class="pagination-btn" aria-label="Página anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <span>2 / 5</span>
+              <button class="pagination-btn" aria-label="Próxima página">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+            
+            <button class="btn btn-danger">
+              Remover Aluno
+            </button>
+          </div>
+        </section>
+        <br>
+        <!-- Seção de Agenda -->
+        <section class="calendar-section">
+          <h2>Agenda Pessoal</h2>
+          
+          <div class="calendar">
+            <div class="calendar-header">
+              <button class="calendar-nav-btn" aria-label="Mês anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <h3>Maio</h3>
+              <button class="calendar-nav-btn" aria-label="Próximo mês">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+            
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Domingo</th>
+                  <th>Segunda</th>
+                  <th>Terça</th>
+                  <th>Quarta</th>
+                  <th>Quinta</th>
+                  <th>Sexta</th>
+                  <th>Sábado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="calendar-actions">
+            <button class="btn btn-primary">
+              Adicionar Evento
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 SeriePro. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.querySelector('.mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      menuButton.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        mobileMenu.classList.toggle('open');
+        this.classList.toggle('open');
+      });
+      
+      // Adicionar interatividade ao calendário
+      const calendarCells = document.querySelectorAll('.calendar-table td');
+      
+      calendarCells.forEach(cell => {
+        if (cell.textContent.trim() !== '') {
+          cell.addEventListener('click', function() {
+            // Remove a classe 'selected' de todas as células
+            calendarCells.forEach(c => c.classList.remove('selected'));
+            
+            // Adiciona a classe 'selected' à célula clicada
+            this.classList.add('selected');
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
